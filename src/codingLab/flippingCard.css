@@ -1,0 +1,43 @@
+section{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    border:2px solid blue;
+    
+}
+section::before{
+    position:absolute;
+    transform: translate(-150px,-150px);
+    content: "before";
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
+section::after{
+    position:absolute;
+    content: "after";
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    animation: nick 5s;
+} 
+section:last-child:hover{
+    /* background-color: green; */
+    /* transform: rotateY(180deg); */
+}
+
+@keyframes nick {
+    from{
+transform: translate(0px,0px);
+
+    }
+    to{
+        transform: translate(-100px,-100px);
+
+    }
+}
+

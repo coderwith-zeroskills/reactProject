@@ -1,0 +1,16 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height:100vh;
+    background-color: #1fe9c8
+}
+.login-card-container{
+    height:400px;
+    width:300px;
+    background-color: wheat;
+    margin: auto auto;
+}
